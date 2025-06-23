@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stylees.css">
+</head>
+    
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>Tienda TIC</span>
+            </div>
+            <nav>
+								<ul class="menu">
+									<li><a href="index.html">Inicio</a></li>
+                  <li><a href="productos.html">Productos</a></li>
+                  <li><a href="servicios.html">Servicios</a></li>
+								</ul>
+            </nav>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <h1>Productos de Tecnología</h1>
+            <p>Descubre nuestra selección de los mejores productos tecnológicos para mejorar tu productividad y experiencia digital</p>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <!-- Filtros -->
+        <div class="filters">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar productos...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="category-filter">
+                <select>
+                    <option>Todas las categorías</option>
+                    <option>Laptops</option>
+                    <option>Smartphones</option>
+                    <option>Tablets</option>
+                    <option>Accesorios</option>
+                    <option>Software</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Productos -->
+        <div class="products-grid" id="products-container">
+            <!-- Los productos se cargarán con JavaScript -->
+        </div>
+    </div>
+
+    <!-- Carrito de Compras -->
+    <div class="cart" id="cart">
+        <div class="cart-header">
+            <h2>Carrito de Compras</h2>
+            <span class="cart-close" id="cart-close">&times;</span>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Los elementos del carrito se añadirán dinámicamente -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total-price">$0.00</span>
+        </div>
+        <div class="cart-actions">
+            <button class="btn btn-secondary" id="cart-clear">Vaciar Carrito</button>
+            <button class="btn btn-primary" id="cart-checkout">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Notificación -->
+    <div class="notification" id="notification"></div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tienda TIC</h3>
+                    <p>Tu destino para los mejores productos tecnológicos y soluciones digitales.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+              
+                <div class="footer-section">
+                    <h3>Información de Contacto</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Tecnología 123, Ciudad Digital</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890<li>
+                        <li><i class="fas fa-envelope"></i> info@tiendatic.com</li>
+                        <li><i class="fas fa-clock"></i> Lunes a Viernes: 9am - 8pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025@ Tienda TIC. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+
+</body>
+</html>

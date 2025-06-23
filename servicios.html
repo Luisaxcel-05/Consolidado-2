@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stylees.css">
+</head>
+    
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>Tienda TIC</span>
+            </div>
+            <nav>
+								<ul class="menu">
+									<li><a href="index.html">Inicio</a></li>
+                  <li><a href="productos.html">Productos</a></li>
+                  <li><a href="servicios.html">Servicios</a></li>
+								</ul>
+            </nav>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal con páginas -->
+    <main class="principal">
+         <!-- Página Servicios -->
+         <section class="contenedor">
+             <h2 class="titulo-seccion">Nuestros Servicios TIC</h2>
+                <p class="animacion-entrada">Ofrecemos soluciones tecnológicas integrales para empresas y organizaciones que buscan optimizar sus procesos mediante el uso de tecnologías de la información y comunicación.</p>
+                
+                <div class="animacion-entrada retraso-1">
+                    <table class="tabla-servicios">
+                        <thead>
+                            <tr>
+                                <th>Servicio</th>
+                                <th>Descripción</th>
+                                <th>Beneficios</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Correo electrónico corporativo</td>
+                                <td>Implementación y gestión de sistemas de correo electrónico empresarial</td>
+                                <td>Comunicación eficiente, seguridad de datos, colaboración en equipo</td>
+                            </tr>
+                            <tr>
+                                <td>Soluciones en la nube</td>
+                                <td>Migración y gestión de infraestructuras en la nube (IaaS, PaaS, SaaS)</td>
+                                <td>Reducción de costos, escalabilidad, acceso remoto</td>
+                            </tr>
+                            <tr>
+                                <td>Desarrollo web</td>
+                                <td>Creación de sitios web y aplicaciones web a medida</td>
+                                <td>Presencia digital, automatización de procesos, e-commerce</td>
+                            </tr>
+                            <tr>
+                                <td>Seguridad informática</td>
+                                <td>Protección de sistemas y datos contra amenazas digitales</td>
+                                <td>Prevención de ataques, cumplimiento normativo, continuidad del negocio</td>
+                            </tr>
+                            <tr>
+                                <td>Redes y conectividad</td>
+                                <td>Diseño e implementación de infraestructuras de red</td>
+                                <td>Conectividad confiable, alta velocidad, gestión centralizada</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="formulario-contacto animacion-entrada retraso-2">
+                    <h3>Contáctenos</h3>
+                    <p>Complete el siguiente formulario para solicitar información sobre nuestros servicios:</p>
+                    
+                    <form id="formContacto">
+                        <div class="grupo-formulario">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        
+                        <div class="grupo-formulario">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="grupo-formulario">
+                            <label for="servicio">Servicio de interés:</label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="">Seleccione un servicio</option>
+                                <option value="correo">Correo electrónico corporativo</option>
+                                <option value="nube">Soluciones en la nube</option>
+                                <option value="desarrollo">Desarrollo web</option>
+                                <option value="seguridad">Seguridad informática</option>
+                                <option value="redes">Redes y conectividad</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grupo-formulario">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="grupo-formulario">
+                            <button type="submit" class="boton">Enviar consulta</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tienda TIC</h3>
+                    <p>Tu destino para los mejores productos tecnológicos y soluciones digitales.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+              
+                <div class="footer-section">
+                    <h3>Información de Contacto</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Tecnología 123, Ciudad Digital</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890<li>
+                        <li><i class="fas fa-envelope"></i> info@tiendatic.com</li>
+                        <li><i class="fas fa-clock"></i> Lunes a Viernes: 9am - 8pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025@ Tienda TIC. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
